@@ -1,0 +1,4 @@
+# 依赖：本项目只用标准库 + numpy
+# 元学习、二阶梯度(有限差分 HVP)、半监督损失、优化器、MATLAB .mat 读取
+# 全部为手写实现，不依赖 PyTorch / TensorFlow / scipy / scikit-learn。
+numpy>=1.24

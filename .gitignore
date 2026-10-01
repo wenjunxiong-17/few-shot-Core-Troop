@@ -1,0 +1,37 @@
+# ---- Python ----
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ipynb_checkpoints/
+.venv/
+venv/
+env/
+
+# ---- 本地依赖（本机 pip 不可用时手工解包放置的第三方库）----
+.pylibs/
+.tmp/
+
+# ---- 数据：版权原因不纳入版本控制，获取方式见 DATA.md ----
+data/
+*.mat
+*.csv
+
+# ---- 论文 PDF 与全文提取：版权原因不纳入版本控制，见 THIRD_PARTY.md ----
+papers/
+*.pdf
+
+# ---- 训练日志（体积大、且含本机绝对路径）----
+*_log.txt
+
+# ---- 编辑器 / 系统 ----
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ---- 临时脚本与冒烟测试产物（仅根目录，避免误伤 ml/__init__.py）----
+/_smoke_*.json
+/results/_smoke_*.json
+*.bak
