@@ -9,9 +9,9 @@ inner-loop SSL variants.  Plus a random-initialisation control.
 import sys, time, json, argparse, os
 import numpy as np
 
-WS = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+WS = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, WS)
+os.makedirs(os.path.join(WS, "results"), exist_ok=True)   # 输出目录（打包时改名为 results）
 
 from ml.core import (MLP, ce_grad, p_add, p_scale, p_zeros_like, p_clone,
                      inner_adapt, maml_meta_grad, Adam, combine_grads, accuracy)

@@ -10,9 +10,9 @@ adaptation step size and the number of adaptation steps.
 import sys, json, os, time
 import numpy as np
 
-WS = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+WS = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, WS)
+os.makedirs(os.path.join(WS, "results"), exist_ok=True)   # 输出目录（打包时改名为 results）
 
 from ml.core import (ce_grad, softmax, accuracy, inner_adapt, combine_grads,
                      p_scale)
