@@ -132,8 +132,7 @@ rank(H) = min(I, C − 1)
 
 **元梯度正确性**：二阶元梯度与有限差分校验的一致性（相对误差 ~1.8e−5）。
 
-（这两项的验证脚本在完整版里：`tests/test_maml_grad.py`、
-`analysis/verify_vat_rank1.py`、`analysis/verify_vat_regression.py`。）
+（这两项的验证脚本不在本包的 10 个文件里，需要的话可以单独提供。）
 
 ---
 
